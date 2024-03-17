@@ -8,8 +8,13 @@
 }
 
 body{
-    background: rgb(30, 30, 30);
+   
+        background: linear-gradient(90deg in oklab, blue, red);
+      
+    
+
     color: white;
     overflow: hidden;
     overflow-y: scroll;
 }
+

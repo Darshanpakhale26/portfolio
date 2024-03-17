@@ -5,6 +5,7 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    margin-top: auto;
 }
 
 .bg{
@@ -35,6 +36,19 @@
 .introName{
     color: yellow;
 
+.dev{
+    background:linear-gradient(to right, red , blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+    
+
+}
+.introName:hover{
+    color: white;
+    transition: color 0.3s ease-out;
+   
 }
 .introPara{
     font-size: medium;

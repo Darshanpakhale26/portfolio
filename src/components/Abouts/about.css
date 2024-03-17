@@ -1,0 +1,106 @@
+#abouts{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.aboutTitle{
+    font-size: 2rem;
+    margin: 1rem 0;
+    background:linear-gradient(to right, rgb(37, 5, 30) , rgb(51, 70, 78));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
+}
+
+.aboutDesc{
+    font-size: 1rem;
+    font-weight: bold;
+   
+    margin-bottom: 20px;
+    color: rgb(195, 205, 208);
+}
+.allAbout{
+    
+    max-width: 80%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;   
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    border-width: 5rem; 
+    height: 30rem;  
+}
+.allAbout:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 0 0.5rem 0.25rem rgba(8, 28, 37, 0.8);
+
+}
+
+.Achievements{
+    margin-top: 20px; 
+   
+    
+
+    
+}
+
+
+.AchievementsTitle {
+    font-size: 20px;
+    
+    margin-bottom: 10px;
+    background:linear-gradient(to right, rgb(77, 27, 27) , rgb(13, 13, 212));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  }
+ 
+  ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+
+  }
+
+
+li{
+    margin-bottom: 10px;
+    color: rgb(195, 205, 208);
+}
+
+ul li a{
+    color: rgb(195, 205, 208);
+}
+
+ul li a:hover{
+    color: rgb(10, 13, 14);
+    border-bottom:  3px solid rgb(12, 12, 10);
+    transform: scale(0.8);
+    
+}
+ 
+
+
+    
+
+@media screen and (max-width: 550px){
+   
+    .allAbout{
+        height: 40rem;  
+        
+    }
+    
+    
+}

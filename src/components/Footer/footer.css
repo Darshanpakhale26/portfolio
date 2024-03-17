@@ -1,13 +1,14 @@
 .footer{
-    width: 100vw;
-    height: 4rem;
-    background: rgb(40, 40, 40);
+    margin:0;
+    padding: 0;  
+    height: 5rem;
+    background: rgb(2, 28, 36);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 300;
-    font-size: small;
-
-
-
 }
+
+
+
+
+  

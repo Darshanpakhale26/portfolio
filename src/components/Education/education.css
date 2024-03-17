@@ -13,36 +13,44 @@
 
 .eduTitle{
     font-size: 2rem;
-    margin: 1rem 0;
+   
+    background:linear-gradient(to right, rgb(37, 5, 30) , rgb(51, 70, 78));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+   
+    
+    
+}
 
-}
-.eduDesc{
-    font-size: 1rem;
-    font-weight: 300;
-}
 
 .eduBars{
     margin: 1.5rem;
     width: 100vw;
     max-width: 80%;
     text-align: left;
-    background: rgb(50, 50, 50);
-    border-radius: 0.5rem;   
-
+    cursor: pointer;
+    
+    
 }
 
 .eduBar{
     display: flex;
+    margin: 1rem 0;
     padding: 1.5rem 2rem;
     
+    border-radius: 0.5rem;   
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    border-width: 5rem;
     
 }
-.eduBarImg{
-    object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin-right: 1rem;
+.eduBar:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 0 0.5rem 0.25rem rgba(8, 28, 37, 0.8);
+   
 }
+
 
 .eduBarText>p{
     font-size: 0.9rem;

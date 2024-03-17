@@ -1,42 +1,30 @@
 import React from "react";
 import "./skills.css";
-import UIDesign from "../../assets/ui-design.png";
-import WebDesign from "../../assets/website-design.png";
-import AppDesign from "../../assets/app-design.png";
-const Skills = () => {
-  return (
-    <section id="skills">
-      <span className="skillTitle">About Me</span>
-      <span className="skillDesc">
-      I'm Darshan Pakhale, currently in my final year of engineering at PVG'sCOET, Pune. As a recent graduate excited to step into the professional world, I have strong skills in C++, Java, and front-end development.
+import Portfolio1 from "../../assets/cpp.png";
+import Portfolio2 from "../../assets/c.png";
+import Portfolio3 from "../../assets/java.png";
+import Portfolio4 from "../../assets/mysql.png";
+import Portfolio5 from "../../assets/react.png";
+import Portfolio6 from "../../assets/github.png";
 
-I am actively exploring opportunities for both full-time positions and internships to apply and enhance my skills. I am passionate about using technology to solve real-world problems and making a positive contribution to any team. 🚀
+const works = () => {
+  return (
+    <section id="works">
+      <h2 className="worksTitle">My Skills</h2>
+      <span className="worksDesc">
+      During my engineering studies, I acquired a diverse set of skills and technical knowledge, encompassing the following stack:
       </span>
-      <div className="skillBars">
-        <div className="skillBar">
-          <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>UI/UX Design</h2>
-            <p></p>
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>Website Design</h2>
-            <p></p>
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={AppDesign} alt="AppDesign" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>App Design</h2>
-            <p></p>
-          </div>
-        </div>
+      <div className="workImgs">
+      <img src={Portfolio1} alt="" className="worksImg" />
+      <img src={Portfolio2} alt="" className="worksImg" />
+      <img src={Portfolio3} alt="" className="worksImg" />
+      <img src={Portfolio4} alt="" className="worksImg" />
+      <img src={Portfolio5} alt="" className="worksImg" />
+      <img src={Portfolio6} alt="" className="worksImg" />
       </div>
+      <button className="workBtn">View More</button>
     </section>
   );
 };
 
-export default Skills;
+export default works;

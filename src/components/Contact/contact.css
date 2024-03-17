@@ -8,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: -6rem;
 }
 
 .clientsDesc {
@@ -15,33 +16,57 @@
   font-weight: 300;
 }
 
-.clientsImgs {
-  margin: 1rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
- 
+/* Add your CSS styles here */
+/* contact.css */
 
+.clientsImgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 20px; /* Gap between grid items */
+  margin-top: 50px;
+}
+
+.client {
+  /* Optionally, you can set a max-width to limit the size of each card */
+  max-width: 100%; /* Adjust as needed */
+  margin: 2rem
+}
+
+.projectCard {
+  background-color: #f8f9fa; /* Background color of the card */
+  border-radius: 8px; /* Border radius for rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+.projectCard:hover {
+  transform: scale(1.05);
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 0 0.5rem 0.25rem rgba(8, 28, 37, 0.8);
 }
 
 .clientsImg {
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 3/2;
-  height: 15rem;
-  object-fit: cover;
-  min-width: 9rem;
-  margin: 1rem;
-  padding: 0.25rem;
-  border-radius: 0.5rem;
+  width: 100%; /* Image width to fit the card */
+  height: auto; /* Image height to maintain aspect ratio */
+}
+
+.projectInfo {
+  padding: 20px; /* Padding for the project info */
+  color: rgb(45, 39, 30);
+}
+
+.projectInfo p {
+  margin-bottom: 10px; /* Bottom margin for the project title */
+}
+
+.projectInfo a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
   display: inline-block;
-  transition: transform 0.4s ease-out;
-  
 }
-.clientsImg:hover {
-  transform: scale(0.9);
-}
+
+
+
+
 
 
 #clients {
@@ -51,7 +76,6 @@
 .contactDesc {
   font-size: 1rem;
   font-weight: 300;
- 
 }
 .contactForm {
   margin: 1rem;
@@ -65,6 +89,10 @@
 .contactPageTitle {
   font-size: 2rem;
   margin-bottom: 1rem;
+  background:linear-gradient(to right, rgb(37, 5, 30) , rgb(51, 70, 78));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 
 .name,
@@ -78,7 +106,7 @@
   color: white;
   border: none;
   border-radius: 0.5rem;
-  background-color: rgb(40, 40, 40);
+  background: rgba(30, 63, 119, 0.5);
 }
 .submitBtn {
   background: white;
@@ -88,27 +116,23 @@
   padding: 0.75rem 3.5rem;
   display: inline-block;
   transition: transform 0.3s ease-out;
-  
- 
 }
 .submitBtn:hover {
   transform: scale(0.8);
 }
 
-.links a{
-  display: flex;
+.links a {
   flex-wrap: wrap;
   display: inline-block;
-  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
 }
-.Link{
-    object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin: 0 0.75rem;
+.Link {
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.75rem;
 }
 
 .links a:hover {
   transform: scale(0.8);
 }
-
